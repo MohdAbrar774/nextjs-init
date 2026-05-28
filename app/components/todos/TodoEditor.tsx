@@ -25,12 +25,8 @@ export default function TodoEditor({
     <div className="grid gap-4 rounded-4xl border border-[#5d4b36] bg-[#12181f]/90 p-6 shadow-[inset_0_0_0_1px_rgba(175,144,105,0.12)] sm:grid-cols-[1.2fr_0.8fr]">
       <div className="space-y-3">
         <div>
-          <p className="text-xs uppercase tracking-[0.3em] text-[#a68f6a]">Task builder</p>
-          <h2 className="mt-3 text-2xl font-semibold text-[#f4ead4]">Create a richer todo.</h2>
+          <h2 className="text-2xl font-semibold text-[#f4ead4]">New Task</h2>
         </div>
-        <p className="text-sm leading-6 text-[#b7ab91]">
-          Add a title and full description so every todo includes enough context to stay actionable.
-        </p>
       </div>
 
       <div className="space-y-4">
@@ -52,7 +48,7 @@ export default function TodoEditor({
             id="todo-description"
             value={description}
             onChange={(event) => setDescription(event.target.value)}
-            placeholder="Description: what does this task really mean?"
+            placeholder="Add details (optional)"
             rows={4}
             className="resize-none rounded-2xl border border-[#37312a] bg-[#11181b] px-4 py-3 text-sm text-[#f2e8d1] placeholder:text-[#7f6f54] focus:border-[#8e6f46] focus:outline-none"
           />

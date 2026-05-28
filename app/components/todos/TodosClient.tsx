@@ -157,12 +157,8 @@ export default function TodosClient() {
       <div className="mb-6 space-y-5">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <p className="text-sm uppercase tracking-[0.25em] text-[#9a7b55]">Product</p>
-            <h1 className="text-3xl font-semibold text-[#f5eedf] sm:text-4xl">Todo Product Panel</h1>
+            <h1 className="text-3xl font-semibold text-[#f5eedf] sm:text-4xl">Tasks</h1>
           </div>
-          <p className="max-w-xl text-sm text-[#b9aa91] sm:text-base">
-            Use the API to add, complete, and delete todos from a clean dark product interface.
-          </p>
         </div>
 
         <TodoEditor
@@ -185,8 +181,8 @@ export default function TodosClient() {
       <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {todos.length === 0 ? (
           <div className="col-span-full rounded-4xl border border-dashed border-[#5c4b33] bg-[#11181a] p-10 text-center text-[#bbb096] shadow-inner shadow-[#00000022]">
-            <p className="text-lg font-semibold text-[#e5d8c5]">Your board is clean.</p>
-            <p className="mt-3 text-sm leading-6">Add a task to see it appear in a product-ready workspace.</p>
+            <p className="text-lg font-semibold text-[#e5d8c5]">No tasks yet.</p>
+            <p className="mt-3 text-sm leading-6">Add a task to get started.</p>
           </div>
         ) : (
           todos.map((todo) => (
